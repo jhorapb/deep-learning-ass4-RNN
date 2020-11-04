@@ -212,7 +212,7 @@ def train(RNN, H_params, book_data):
             RNN.W -= np.multiply(eta / np.sqrt(dic_grad_momentum['grad_W'] + epsilon), dic_grad['grad_W'])
 
             loss = compute_loss(P, Y)
-            if smooth_loss !=0:
+            if smooth_loss != 0:
                 smooth_loss = .999 * smooth_loss + .001 * loss
             else:
                 smooth_loss = loss
