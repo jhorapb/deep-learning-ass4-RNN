@@ -232,7 +232,7 @@ def train(RNN, H_params, book_data):
                 print('Loss : ', smooth_loss)
                 print("New Synthesized Sequences : ", new_Y_str)
 
-    plt.plot(list_update_step, list_loss, label = "Smooth loss")
+    plt.plot(list_update_step, list_loss, label = "smooth loss")
     plt.xlabel('Number of update steps')
     plt.ylabel('Loss')
     plt.legend()
