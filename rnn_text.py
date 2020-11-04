@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 Data reader
 """
 def read_contents():
-    book_data = ''
+    book_contents = ''
     with open('goblet_book.txt', 'r', encoding='utf-8') as book:
         book_contents = book.read()
 
