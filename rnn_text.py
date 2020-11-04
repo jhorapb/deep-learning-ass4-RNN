@@ -7,11 +7,6 @@ Data reader
 """
 def read_contents():
     book_data = ''
-    # with open('goblet_book.txt', 'r', encoding='utf-8') as book:
-    #     lines = book.readlines()
-    # for line in lines:
-    #     book_data += line
-    
     with open('goblet_book.txt', 'r', encoding='utf-8') as book:
         book_contents = book.read()
 
